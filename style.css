@@ -1,0 +1,63 @@
+nav {
+    background-color: #322a2a;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left; /* elementi in orizzontale */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #c32929; /* Colore passaggio del mouse */
+}
+
+nav form {
+    float: right;
+}
+
+nav input[type="text"] {
+    padding: 10px;
+    margin: 15px 0;
+    border: solid 5px;
+}
+
+nav button[type="submit"] {
+    background-color: #2aac2f;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Stili per la responsività */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Nasconde il menu normale */
+    }
+
+    .hamburger {
+        display: block; /* Mostra il menu hamburger */
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .hamburger:hover {
+        background-color: #c32929; /* Colore passaggio del mouse per hamburger */
+    }
+}
